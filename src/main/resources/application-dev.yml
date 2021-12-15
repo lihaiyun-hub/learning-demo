@@ -1,0 +1,45 @@
+spring:
+  datasource:
+    ds1: #数据源1，默认数据源
+      url: jdbc:mysql://localhost:3306/webdb?serverTimezone=GMT&useSSL=false&useUnicode=true&characterEncoding=utf8
+      username: root
+      password: root
+      typ: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      filters: stat
+      maxActive: 2
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+
+    ds2: #数据源2
+      url: jdbc:mysql://localhost:3306/spring_db?serverTimezone=GMT&useSSL=false&useUnicode=true&characterEncoding=utf8
+      username: root
+      password: root
+      typ: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      filters: stat
+      maxActive: 2
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+
+
+
+
