@@ -8,7 +8,7 @@ import lombok.Data;
 /**
  * @author mazhen
  * @className Student
- * @Description 
+ * @Description
  * @date 2020/11/17 15:30
  */
 @Data
